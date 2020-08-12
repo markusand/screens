@@ -1,0 +1,34 @@
+[data-tooltip] {
+	position: relative;
+
+	&::before {
+		position: absolute;
+		bottom: 100%;
+		left: 50%;
+		z-index: 3;
+		display: none;
+		box-sizing: border-box;
+		margin: 0 0 20px;
+		text-align: center;
+		padding: $size-s $size-m;
+		color: $color-light;
+		line-height: 1.25;
+		background: $color-dark;
+		transform: translateX(-50%);
+		content: attr(data-tooltip);
+	}
+
+	&::after {
+		position: absolute;
+		bottom: 100%;
+		left: 50%;
+		display: none;
+		border: 10px solid transparent;
+		border-top: 10px solid $color-dark;
+		transform: translateX(-50%);
+		content: '';
+	}
+
+	&:hover::before,
+	&:hover::after { display: block; }
+}

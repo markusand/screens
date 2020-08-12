@@ -1,8 +1,12 @@
 <template>
 	<div id="app">
-		<div id="nav">
-			<router-link to="/">Home</router-link>
-		</div>
-		<router-view />
+		<header id="app__header">
+			<section />
+			<router-link to="/">
+				<img svg-inline src="@/assets/logos/cdm.svg" class="logo-cdm">
+			</router-link>
+			<section />
+		</header>
+		<router-view id="app__content" />
 	</div>
 </template>

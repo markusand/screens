@@ -1,0 +1,39 @@
+/* COLORS */
+$color-dark: #2d2c2f !default;
+$color-light: #fff !default;
+$color-primary: #7cb46c !default;
+$color-alert: #c23b22 !default;
+
+$color-background: $color-light !default;
+
+/* SIZES */
+$size-base: 16px !default;
+$size-xxxs: 0.25 * $size-base !default;
+$size-xxs: 0.5 * $size-base !default;
+$size-xs: 0.75 * $size-base !default;
+$size-s: 1 * $size-base !default;
+$size-m: 1.5 * $size-base !default;
+$size-l: 2 * $size-base !default;
+$size-xl: 3 * $size-base !default;
+$size-xxl: 4 * $size-base !default;
+$size-xxxl: 5 * $size-base !default;
+
+$touch-size: $size-xl !default;
+
+/* LAYOUT */
+
+/* TYPOGRAPHY */
+$text-color: $color-dark !default;
+$text-size: 18px !default;
+$text-light: 300 !default;
+$text-bold: 700 !default;
+$text-font: 'Roboto', 'Arial', sans-serif !default;
+$text-line-height: 1.2 !default;
+
+$text-font--titles: 'Futura', 'Arial', sans-serif !default;
+
+/* ANIMATIONS */
+$animation-duration: 0.6s !default;
+$animation-slide-distance: 40px !default;
+$animation-flash-radius: $size-m !default;
+$animation-flash-duration: 3s !default;
