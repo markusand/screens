@@ -28,6 +28,11 @@ export default new Router({
 					name: 'general',
 					component: () => import('./views/safety/SafetyGeneral.vue'),
 				},
+				{
+					path: 'rescue',
+					name: 'rescue',
+					component: () => import('./views/safety/SafetyRescue.vue'),
+				},
 			],
 		},
 		{
