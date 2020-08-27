@@ -1,0 +1,24 @@
+/* LANGUAGES SELECTOR */
+.nav-languages {
+	font-family: $text-font--titles;
+	text-align: right;
+
+	li { display: inline-block; }
+
+	a {
+		display: block;
+		line-height: $touch-size;
+		padding: 0 $size-xs;
+		text-decoration: none;
+		color: $color-dark;
+		font-weight: $text-light;
+		font-size: $size-s;
+		opacity: 0.4;
+		text-transform: uppercase;
+
+		&.active {
+			opacity: 1;
+			font-weight: $text-bold;
+		}
+	}
+}
