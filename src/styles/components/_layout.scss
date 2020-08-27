@@ -1,0 +1,34 @@
+.block-image {
+	display: flex;
+	align-items: flex-end;
+
+	&__figure {
+		flex: 0 0 content;
+
+		img {
+			object-fit: cover;
+			object-position: center center;
+			overflow: hidden;
+		}
+	}
+
+	&__aside { flex: 1; }
+}
+
+.block-image-box {
+	padding-bottom: $size-xl !important;
+
+	&__box { margin: $size-m 0 -100px -150px; }
+}
+
+.block-video {
+	padding-left: 20% !important;
+
+	&__video { position: relative; }
+
+	&_title {
+		margin-bottom: -0.5em;
+		margin-left: -1em;
+		max-width: 70%;
+	}
+}
