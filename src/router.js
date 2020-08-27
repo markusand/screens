@@ -19,6 +19,18 @@ export default new Router({
 			component: () => import('./views/About.vue'),
 		},
 		{
+			path: '/safety',
+			name: 'safety',
+			component: () => import('./views/Safety.vue'),
+			children: [
+				{
+					path: '',
+					name: 'general',
+					component: () => import('./views/safety/SafetyGeneral.vue'),
+				},
+			],
+		},
+		{
 			path: '*',
 			name: 'NotFound',
 			component: () => import('./views/NotFound.vue'),
