@@ -1,3 +1,107 @@
+/* MAIN NAVIGATION */
+.nav-main {
+	height: 100%;
+	margin: $size-xl;
+	display: grid;
+	position: relative;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: repeat(18, 1fr);
+
+	&__section {
+		position: relative;
+
+		.cover {
+			height: 100%;
+			width: 100%;
+			background-size: cover;
+			background-position: 50% 50%;
+			background-repeat: no-repeat;
+		}
+
+		.title { position: absolute; }
+
+		/* SECTIONS */
+		&--about {
+			background: $color-light;
+			grid-area: 1 / 2 / span 2 / span 2;
+
+			.title {
+				top: 50%;
+				left: 100%;
+				transform: translate(30px, -50%);
+			}
+			.cover { background-size: 80% 80%; }
+		}
+
+		&--discover {
+			grid-area: 5 / 2 / span 4 / span 5;
+
+			.title {
+				bottom: -0.7em;
+				left: -1em;
+			}
+			.cover { filter: saturate(0.4); }
+		}
+
+		&--safety {
+			grid-area: 2 / 9 / span 6 / span 4;
+
+			.title {
+				bottom: 0.5em;
+				left: -0.7em;
+				writing-mode: vertical-lr;
+				transform: rotate(180deg);
+			}
+			.cover { filter: brightness(1.5) contrast(1.5); }
+		}
+
+		&--commitment {
+			grid-area: 10 / 8 / span 4 / span 4;
+
+			.title {
+				top: 50%;
+				right: -1.2em;
+				transform: translateY(-50%);
+				writing-mode: vertical-lr;
+			}
+			.cover { filter: saturate(0.6); }
+		}
+
+		&--snow_science {
+			grid-area: 11 / 1 / span 4 / span 5;
+
+			.title {
+				top: 0.5em;
+				right: -1em;
+				text-align: right;
+				width: 90%;
+			}
+			.cover { filter: contrast(0.8) brightness(1.1); }
+		}
+
+		&--explore {
+			grid-area: 16 / 7 / span 3 / span 5;
+
+			.title {
+				top: -0.7em;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+			.cover { filter: brightness(1.7) contrast(0.7) saturate(0.4); }
+		}
+
+		&--kids {
+			grid-area: 17 / 1 / span 2 / span 4;
+
+			.title {
+				top: -0.7em;
+				left: -0.5em;
+			}
+			.cover { filter: saturate(0.4); }
+		}
+	}
+}
+
 /* LANGUAGES SELECTOR */
 .nav-languages {
 	font-family: $text-font--titles;
@@ -19,6 +123,41 @@
 		&.active {
 			opacity: 1;
 			font-weight: $text-bold;
+		}
+	}
+}
+
+/* SLIDE NAVIGATION */
+.slide-nav ul {
+	display: flex;
+	justify-content: center;
+	margin: $size-xl 0;
+
+	a {
+		line-height: $touch-size;
+		padding: 0 $touch-size / 3;
+		text-transform: uppercase;
+		opacity: 0.4;
+		position: relative;
+		z-index: 1;
+		text-align: center;
+		color: inherit;
+		transition: all $animation-duration ease;
+
+		&::after {
+			content: '';
+			display: block;
+			height: 2px;
+			width: 0;
+			background: currentColor;
+			transition: inherit;
+			margin: 0 auto;
+		}
+
+		&.router-link-exact-active {
+			opacity: 1;
+
+			&::after { width: 100%; }
 		}
 	}
 }
