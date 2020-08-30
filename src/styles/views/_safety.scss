@@ -80,3 +80,14 @@
 	26.25% { transform: scale(1.5); }
 	27.5% { transform: scale(1); }
 }
+
+/* EQUIPMENT -------------------------------------------------------------- */
+#page-safety-equipment {
+	.header {
+		height: 730px;
+		background: url('/assets/images/trekking_gear.png') no-repeat left center;
+		background-size: 100%;
+		margin: 0 -48px !important;
+		filter: saturate(0.8);
+	}
+}

@@ -33,6 +33,11 @@ export default new Router({
 					name: 'rescue',
 					component: () => import('./views/safety/SafetyRescue.vue'),
 				},
+				{
+					path: 'equipment',
+					name: 'equipment',
+					component: () => import('./views/safety/SafetyEquipment.vue'),
+				},
 			],
 		},
 		{

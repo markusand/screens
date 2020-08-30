@@ -42,3 +42,24 @@
 		li:nth-child(2n) { transform: translateY(75%); }
 	}
 }
+
+.list-icons {
+	margin: 0 $size-m;
+
+	li {
+		display: inline-flex;
+		width: 100%;
+		align-items: center;
+		margin: $size-base 0;
+	}
+
+	img {
+		display: inline-block;
+		width: 1.5em;
+		height: 1.5em;
+		margin-right: 1em;
+	}
+
+	&.columns-2 { column-count: 2; }
+	&.columns-3 { column-count: 3; }
+}
