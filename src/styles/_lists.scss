@@ -1,3 +1,14 @@
+ul {
+	li.reverse { text-align: right; }
+
+	.block-image,
+	.block-image-box,
+	.block-video {
+		padding: 0 !important;
+		margin: 0 !important;
+	}
+}
+
 .list {
 	display: flex;
 	flex-wrap: wrap;

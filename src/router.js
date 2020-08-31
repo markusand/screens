@@ -38,6 +38,11 @@ export default new Router({
 					name: 'equipment',
 					component: () => import('./views/safety/SafetyEquipment.vue'),
 				},
+				{
+					path: 'wildlife',
+					name: 'wildlife',
+					component: () => import('./views/safety/SafetyWildlife.vue'),
+				},
 			],
 		},
 		{

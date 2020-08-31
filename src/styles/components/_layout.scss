@@ -13,6 +13,8 @@
 	}
 
 	&__aside { flex: 1; }
+
+	&.reverse { flex-direction: row-reverse; }
 }
 
 .block-image-box {

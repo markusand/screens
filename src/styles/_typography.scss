@@ -61,6 +61,11 @@ h6 {
 	}
 
 	&:not(.reverse) { counter-increment: counter__section; }
+
+	.reverse & {
+		left: auto;
+		right: 0;
+	}
 }
 
 /* TEXT */
