@@ -26,3 +26,8 @@ figure {
 	z-index: 0;
 	object-fit: cover;
 }
+
+.icon {
+	&--success { color: $color-success; }
+	&--alert { color: $color-alert; }
+}

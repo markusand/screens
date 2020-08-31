@@ -43,6 +43,11 @@ export default new Router({
 					name: 'wildlife',
 					component: () => import('./views/safety/SafetyWildlife.vue'),
 				},
+				{
+					path: 'thunderstorm',
+					name: 'thunderstorm',
+					component: () => import('./views/safety/SafetyThunderstorm.vue'),
+				},
 			],
 		},
 		{
