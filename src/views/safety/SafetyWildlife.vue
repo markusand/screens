@@ -36,7 +36,7 @@ import { Container, BlockImage } from '@/components/layout';
 import { species } from '@/config/safety';
 
 export default {
-	name: 'SafetyEquipment',
+	name: 'SafetyWildlife',
 	components: { Container, BlockImage },
 	mixins: [TransitionsViews],
 	data() {
