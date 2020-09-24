@@ -66,3 +66,30 @@ export const thunderstorm = {
 		{ id: 'feet_balls', left: 33, top: 87 },
 	],
 };
+
+export const hypothermia = {
+	animation: {
+		DECREASE_TIME: 500,
+		INCREASE_TIME: 10,
+		WAIT_TIME: 5000,
+	},
+	symptoms: {
+		normal: [36.5, 37],
+		chill: [32.1, 36.5],
+		sensory_loss: [28.5, 36.5],
+		speech_impairment: [28.5, 35],
+		memory_loss: [28.5, 34],
+		motor_uncoordination: [28.5, 34],
+		arrhythmia: [28.1, 29],
+		cardiorespiratory_arrest: [28.1, 29],
+		death: [28, 28],
+	},
+	prevention: {
+		dos: ['drink', 'rest', 'warm', 'clothes'],
+		donts: ['avoid_cotton'],
+	},
+	treatment: {
+		dos: ['call_er', 'isolate', 'dry', 'cover', 'warm_drink'],
+		donts: ['no_alcohol', 'no_heat'],
+	},
+};

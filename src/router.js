@@ -48,6 +48,11 @@ export default new Router({
 					name: 'thunderstorm',
 					component: () => import('./views/safety/SafetyThunderstorm.vue'),
 				},
+				{
+					path: 'hypothermia',
+					name: 'hypothermia',
+					component: () => import('./views/safety/SafetyHypothermia.vue'),
+				},
 			],
 		},
 		{

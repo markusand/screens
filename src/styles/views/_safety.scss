@@ -91,3 +91,37 @@
 		filter: saturate(0.8);
 	}
 }
+
+/* HYPOTHERMIA ----------------------------------------------------------- */
+#page-safety-hypothermia {
+	.animation {
+		flex: 1;
+		display: flex;
+
+		svg { height: 770px; }
+
+		&__container {
+			display: flex;
+			flex-direction: column;
+
+			aside { margin-top: auto; }
+		}
+
+		&__temperature {
+			font-size: 160px;
+			text-align: center;
+			font-weight: bold;
+		}
+
+		&__symptoms {
+			margin-left: $size-xxxl;
+
+			li {
+				font-size: $size-m;
+				font-weight: bold;
+				margin: $size-m 0;
+				opacity: 0.5;
+			}
+		}
+	}
+}
