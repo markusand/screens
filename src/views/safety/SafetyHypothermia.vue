@@ -8,7 +8,7 @@
 				:style="silhouetteColor"
 				data-animate="fade">
 			<div class="animation__container">
-				<p class="animation__temperature">
+				<p class="animation__temperature" data-animate="reveal-down">
 					{{ temperature | decimals(1) }}
 					<sup><small>&deg;C</small></sup>
 				</p>
@@ -17,7 +17,8 @@
 					tag="ul"
 					name="fade"
 					mode="out-in"
-					class="animation__symptoms">
+					class="animation__symptoms"
+					data-animate="fade">
 					<li v-for="symptom in symptoms" :key="symptom">
 						{{ $t(`safety.hypothermia.symptoms.${symptom}`) }}
 					</li>
