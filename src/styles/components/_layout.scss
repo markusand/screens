@@ -13,6 +13,8 @@
 	}
 
 	&__aside { flex: 1; }
+
+	&.reverse { flex-direction: row-reverse; }
 }
 
 .block-image-box {
@@ -26,9 +28,8 @@
 
 	&__video { position: relative; }
 
-	&_title {
-		margin-bottom: -0.5em;
+	&__title {
+		margin-bottom: -0.4em;
 		margin-left: -1em;
-		max-width: 70%;
 	}
 }

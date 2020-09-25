@@ -1,3 +1,18 @@
+/* VUE TRANSITIONS */
+.fade-enter-active,
+.fade-leave-active { transition: all $animation-duration ease; }
+
+.fade-enter {
+	opacity: 0;
+	transform: translateY(1em);
+}
+
+.fade-leave-to {
+	opacity: 0;
+	transform: translateY(-1em);
+}
+
+/* PAGE TRANSITION ANIMATIONS */
 .reveal-up-in { animation: reveal-up $animation-duration ease backwards; }
 .reveal-up-out { animation: reveal-down $animation-duration ease reverse forwards; }
 .reveal-down-in { animation: reveal-down $animation-duration ease backwards; }

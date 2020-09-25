@@ -1,3 +1,14 @@
+ul {
+	li.reverse { text-align: right; }
+
+	.block-image,
+	.block-image-box,
+	.block-video {
+		padding: 0 !important;
+		margin: 0 !important;
+	}
+}
+
 .list {
 	display: flex;
 	flex-wrap: wrap;
@@ -41,4 +52,25 @@
 		li:last-child { margin-bottom: 0; }
 		li:nth-child(2n) { transform: translateY(75%); }
 	}
+}
+
+.list-icons {
+	margin: 0 $size-base;
+
+	li {
+		display: inline-flex;
+		width: 100%;
+		align-items: center;
+		margin: $size-base 0;
+	}
+
+	.icon {
+		display: inline-block;
+		width: 1.5em;
+		height: 1.5em;
+		margin-right: 1em;
+	}
+
+	&.columns-2 { column-count: 2; }
+	&.columns-3 { column-count: 3; }
 }

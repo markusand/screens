@@ -19,7 +19,7 @@ h4 { font-size: $size-l; }
 h5 { font-size: $size-m; }
 
 /* LATERAL MARKER */
-section { counter-increment: counter__section; }
+// section { counter-increment: counter__section; }
 
 h6 {
 	display: flex;
@@ -58,6 +58,13 @@ h6 {
 		left: auto;
 
 		&::after { transform: rotate(180deg); }
+	}
+
+	&:not(.reverse) { counter-increment: counter__section; }
+
+	.reverse & {
+		left: auto;
+		right: 0;
 	}
 }
 

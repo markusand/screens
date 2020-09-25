@@ -19,6 +19,43 @@ export default new Router({
 			component: () => import('./views/About.vue'),
 		},
 		{
+			path: '/safety',
+			name: 'safety',
+			component: () => import('./views/Safety.vue'),
+			children: [
+				{
+					path: '',
+					name: 'general',
+					component: () => import('./views/safety/SafetyGeneral.vue'),
+				},
+				{
+					path: 'rescue',
+					name: 'rescue',
+					component: () => import('./views/safety/SafetyRescue.vue'),
+				},
+				{
+					path: 'equipment',
+					name: 'equipment',
+					component: () => import('./views/safety/SafetyEquipment.vue'),
+				},
+				{
+					path: 'wildlife',
+					name: 'wildlife',
+					component: () => import('./views/safety/SafetyWildlife.vue'),
+				},
+				{
+					path: 'thunderstorm',
+					name: 'thunderstorm',
+					component: () => import('./views/safety/SafetyThunderstorm.vue'),
+				},
+				{
+					path: 'hypothermia',
+					name: 'hypothermia',
+					component: () => import('./views/safety/SafetyHypothermia.vue'),
+				},
+			],
+		},
+		{
 			path: '*',
 			name: 'NotFound',
 			component: () => import('./views/NotFound.vue'),
