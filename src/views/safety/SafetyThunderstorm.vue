@@ -2,7 +2,7 @@
 	<main id="page-safety-thunderstorm">
 		<!-- Intro -->
 		<block-video
-			title="Tempesta elèctrica"
+			:title="$t('safety.thunderstorm.thunderstorm')"
 			:src="video"
 			quality="360p"
 			shadow>
@@ -11,7 +11,7 @@
 
 		<!-- Safety tips -->
 		<section>
-			<h3 data-animate="reveal-down">{{ $t('safety.thunderstorm.stay_safe') }}</h3>
+			<h3 data-animate="reveal-down">{{ $t('safety.thunderstorm.avoid_lightning') }}</h3>
 			<p data-animate="fade-up" delay="150">
 				{{ $t('safety.thunderstorm.prevention') }}
 			</p>
