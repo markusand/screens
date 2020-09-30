@@ -12,11 +12,26 @@ h5 {
 	font-family: $text-font--titles;
 }
 
-h1 { font-size: $size-xxxl; }
-h2 { font-size: $size-xxl; }
-h3 { font-size: $size-xl; }
-h4 { font-size: $size-l; }
-h5 { font-size: $size-m; }
+h1,
+.text-xxxl { font-size: $size-xxxl; }
+
+h2,
+.text-xxl { font-size: $size-xxl; }
+
+h3,
+.text-xl { font-size: $size-xl; }
+
+h4,
+.text-l { font-size: $size-l; }
+
+h5,
+.text-m { font-size: $size-m; }
+
+.text-xxxl,
+.text-xxl,
+.text-xl,
+.text-l,
+.text-m { line-height: 1; }
 
 /* LATERAL MARKER */
 // section { counter-increment: counter__section; }

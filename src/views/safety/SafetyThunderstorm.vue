@@ -9,6 +9,21 @@
 			<p>{{ $t('safety.thunderstorm.description') }}</p>
 		</block-video>
 
+		<container>
+			<div class="cols">
+				<div class="col col--6 stack">
+					<div class="hero">
+						{{ $t('safety.thunderstorm.know_distance') }}
+					</div>
+				</div>
+				<div class="col col--6 stack">
+					<div class="text-xxl hero">
+						d<small>(km)</small>= s / 3
+					</div>
+				</div>
+			</div>
+		</container>
+
 		<!-- Safety tips -->
 		<section>
 			<h3 data-animate="reveal-down">{{ $t('safety.thunderstorm.avoid_lightning') }}</h3>
