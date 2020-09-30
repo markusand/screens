@@ -1,0 +1,130 @@
+/* VUE TRANSITIONS */
+.fade-enter-active,
+.fade-leave-active { transition: all $animation-duration ease; }
+
+.fade-enter {
+	opacity: 0;
+	transform: translateY(1em);
+}
+
+.fade-leave-to {
+	opacity: 0;
+	transform: translateY(-1em);
+}
+
+/* PAGE TRANSITION ANIMATIONS */
+.reveal-up-in { animation: reveal-up $animation-duration ease backwards; }
+.reveal-up-out { animation: reveal-down $animation-duration ease reverse forwards; }
+.reveal-down-in { animation: reveal-down $animation-duration ease backwards; }
+.reveal-down-out { animation: reveal-up $animation-duration ease reverse forwards; }
+.reveal-left-in { animation: reveal-left $animation-duration ease backwards; }
+.reveal-left-out { animation: reveal-right $animation-duration ease reverse forwards; }
+.reveal-right-in { animation: reveal-right $animation-duration ease backwards; }
+.reveal-right-out { animation: reveal-left $animation-duration ease reverse forwards; }
+
+.fade-in { animation: fade-in $animation-duration ease backwards; }
+.fade-out { animation: fade-in $animation-duration ease reverse forwards; }
+
+.slide-up-in { animation: slide-up $animation-duration ease backwards; }
+.slide-up-out { animation: slide-down $animation-duration ease reverse forwards; }
+.slide-down-in { animation: slide-down $animation-duration ease backwards; }
+.slide-down-out { animation: slide-up $animation-duration ease reverse forwards; }
+.slide-left-in { animation: slide-left $animation-duration ease backwards; }
+.slide-left-out { animation: slide-right $animation-duration ease reverse forwards; }
+.slide-right-in { animation: slide-right $animation-duration ease backwards; }
+.slide-right-out { animation: slide-left $animation-duration ease reverse forwards; }
+
+.fade-up-in {
+	animation:
+		slide-up $animation-duration ease backwards,
+		fade-in $animation-duration ease backwards;
+}
+
+.fade-up-out {
+	animation:
+		slide-down $animation-duration ease reverse forwards,
+		fade-in $animation-duration ease reverse forwards;
+}
+
+.fade-down-in {
+	animation:
+		slide-down $animation-duration ease backwards,
+		fade-in $animation-duration ease backwards;
+}
+
+.fade-down-out {
+	animation:
+		slide-up $animation-duration ease reverse forwards,
+		fade-in $animation-duration ease reverse forwards;
+}
+
+.fade-left-in {
+	animation:
+		slide-left $animation-duration ease backwards,
+		fade-in $animation-duration ease backwards;
+}
+
+.fade-left-out {
+	animation:
+		slide-right $animation-duration ease reverse forwards,
+		fade-in $animation-duration ease reverse forwards;
+}
+
+.fade-right-in {
+	animation:
+		slide-right $animation-duration ease backwards,
+		fade-in $animation-duration ease backwards;
+}
+
+.fade-right-out {
+	animation:
+		slide-left $animation-duration ease reverse forwards,
+		fade-in $animation-duration ease reverse forwards;
+}
+
+.flash { animation: flash $animation-flash-duration ease infinite; }
+
+/* UNIT ANIMATIONS */
+@keyframes reveal-up {
+	from { clip-path: inset(100% 0 0 0); }
+	to { clip-path: inset(0); }
+}
+@keyframes reveal-down {
+	from { clip-path: inset(0 0 100% 0); }
+	to { clip-path: inset(0); }
+}
+@keyframes reveal-left {
+	from { clip-path: inset(0 0 0 100%); }
+	to { clip-path: inset(0); }
+}
+@keyframes reveal-right {
+	from { clip-path: inset(0 100% 0 0); }
+	to { clip-path: inset(0); }
+}
+
+@keyframes fade-in {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
+@keyframes slide-up {
+	from { transform: translateY($animation-slide-distance); }
+	to { transform: translateY(0); }
+}
+@keyframes slide-down {
+	from { transform: translateY(-$animation-slide-distance); }
+	to { transform: translateY(0); }
+}
+@keyframes slide-left {
+	from { transform: translateX($animation-slide-distance); }
+	to { transform: translateX(0); }
+}
+@keyframes slide-right {
+	from { transform: translateX(-$animation-slide-distance); }
+	to { transform: translateX(0); }
+}
+
+@keyframes flash {
+	0% { box-shadow: 0 0 0 0 $color-dark; }
+	50% { box-shadow: 0 0 0 $animation-flash-radius transparent; }
+}

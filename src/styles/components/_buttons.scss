@@ -1,0 +1,23 @@
+input[type=submit],
+input[type=button],
+.btn {
+	appearance: none;
+	border: 0;
+	line-height: $touch-size;
+	padding: 0 $size-l;
+	font-size: inherit;
+	background: $color-dark;
+	color: $color-light;
+	font-weight: normal;
+	cursor: pointer;
+	vertical-align: middle;
+
+	&:active { transform: scale(0.9); }
+}
+
+.btn--alert { background: $color-alert; }
+
+.btn--plain {
+	background: transparent;
+	color: $color-dark;
+}

@@ -1,0 +1,13 @@
+.not-found { margin: auto; }
+
+.code-404 {
+	font-size: 18em;
+	margin-bottom: $size-xl;
+	padding: 0 $size-m 300px;
+	background:
+		linear-gradient(to top, transparent 20%, #fff 80%),
+		url('https://images.unsplash.com/photo-1487360920430-e18a62e59ad2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80') no-repeat center bottom;
+	background-size: cover;
+	color: rgba(#000, 0.05);
+	filter: saturate(0.7);
+}

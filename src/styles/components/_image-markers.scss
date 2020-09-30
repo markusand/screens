@@ -1,0 +1,17 @@
+.image-markers {
+	&__marker {
+		i {
+			display: block;
+			border: 0;
+			background: $color-dark;
+			color: $color-light;
+			height: $touch-size;
+			width: $touch-size;
+			line-height: $touch-size;
+			text-align: center;
+			border-radius: 50%;
+			font-size: $touch-size / 2;
+			@extend .flash;
+		}
+	}
+}

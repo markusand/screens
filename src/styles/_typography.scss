@@ -1,0 +1,116 @@
+/* HEADINGS */
+h1,
+h2,
+h3,
+h4,
+h5 {
+	position: relative;
+	text-transform: uppercase;
+	font-weight: bold;
+	z-index: 2;
+	line-height: 1.1;
+	font-family: $text-font--titles;
+}
+
+h1,
+.text-xxxl { font-size: $size-xxxl; }
+
+h2,
+.text-xxl { font-size: $size-xxl; }
+
+h3,
+.text-xl { font-size: $size-xl; }
+
+h4,
+.text-l { font-size: $size-l; }
+
+h5,
+.text-m { font-size: $size-m; }
+
+.text-xxxl,
+.text-xxl,
+.text-xl,
+.text-l,
+.text-m { line-height: 1; }
+
+/* LATERAL MARKER */
+// section { counter-increment: counter__section; }
+
+h6 {
+	display: flex;
+	align-items: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	writing-mode: vertical-rl;
+	font-size: $size-xs;
+	white-space: nowrap;
+	font-family: $text-font--titles;
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	&::before {
+		content: '';
+		display: block;
+		width: 2px;
+		height: $size-xl;
+		background: currentColor;
+		margin: $size-m 0;
+		order: 0;
+	}
+
+	&::after {
+		content: counter(counter__section, decimal-leading-zero);
+		order: -1;
+		writing-mode: initial;
+		overflow: visible;
+	}
+
+	&.reverse {
+		transform: rotate(-180deg);
+		bottom: 0;
+		right: 0;
+		left: auto;
+
+		&::after { transform: rotate(180deg); }
+	}
+
+	&:not(.reverse) { counter-increment: counter__section; }
+
+	.reverse & {
+		left: auto;
+		right: 0;
+	}
+}
+
+/* TEXT */
+p {
+	margin: $size-m 0;
+	z-index: 1;
+}
+
+.note { opacity: 0.5; }
+
+strong { font-weight: $text-bold; }
+i { font-style: italic; }
+big { font-size: 2em; }
+small { font-size: 0.75em; }
+
+sup {
+	font-size: 0.75em;
+	vertical-align: super;
+}
+
+sub {
+	font-size: 0.75em;
+	vertical-align: sub;
+}
+
+a {
+	color: $color-dark;
+	text-decoration: none;
+	display: inline-block;
+	position: relative;
+	font-weight: $text-bold;
+	outline: 0;
+}
