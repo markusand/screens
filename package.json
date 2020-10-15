@@ -29,6 +29,7 @@
 		"stylelint": "^13.6.1",
 		"stylelint-config-standard": "^20.0.0",
 		"stylelint-scss": "^3.18.0",
+		"vue-cli-plugin-yaml": "^1.0.2",
 		"vue-svg-inline-loader": "^1.5.0",
 		"vue-template-compiler": "^2.6.10"
 	}

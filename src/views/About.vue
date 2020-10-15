@@ -2,7 +2,7 @@
 	<main id="page-about">
 		<!-- Project vision -->
 		<block-video
-			:src="introVideo"
+			:src="video"
 			title="Casa de la Muntanya"
 			:tag="$t('about.vision')"
 			shadow>
@@ -30,8 +30,7 @@
 import TransitionsViews from '@/utils/mixin.transitions-views';
 import { Container, BlockVideo } from '@/components/layout';
 import ImageMarkers from '@/components/ImageMarkers.vue';
-
-import { introVideo, markers } from '@/config/about';
+import { video, markers } from '@/config/about';
 
 export default {
 	name: 'About',
@@ -39,7 +38,7 @@ export default {
 	mixins: [TransitionsViews],
 	data() {
 		return {
-			introVideo,
+			video,
 			markers,
 		};
 	},

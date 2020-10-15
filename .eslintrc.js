@@ -34,6 +34,10 @@ module.exports = {
 		'object-curly-newline': ['error', { 'multiline': true }],
 		'no-nested-ternary': 'off',
 		'arrow-parens': ['error', 'as-needed'],
+		'import/extensions': ['error', 'always', {
+			js: 'never',
+			yaml: 'never',
+		}],
 		'vue/html-indent': ['error', 'tab'],
 		'vue/max-attributes-per-line': ['error', {
 			'singleline': 3,

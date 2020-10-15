@@ -82,7 +82,6 @@
 import TransitionsViews from '@/utils/mixin.transitions-views';
 import { Container, BlockVideo } from '@/components/layout';
 import ImageMarkers from '@/components/ImageMarkers.vue';
-
 import { thunderstorm } from '@/config/safety';
 
 export default {

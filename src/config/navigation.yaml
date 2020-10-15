@@ -1,0 +1,44 @@
+- name: about
+  url: /about
+  img: /assets/logos/cdm.svg
+  bgAnimation: reveal-down
+  titleAnimation: reveal-down
+
+- name: safety
+  url: /safety
+  img: https://images.pexels.com/photos/792668/pexels-photo-792668.jpeg?auto=compress&cs=tinysrgb&dpr=1
+  bgAnimation: reveal-down
+  titleAnimation: reveal-left
+
+- name: discover
+  url: /discover
+  img: https://images.pexels.com/photos/293029/pexels-photo-293029.jpeg?auto=compress&cs=tinysrgb&dpr=1
+  bgAnimation: reveal-right
+  titleAnimation: reveal-down
+  shadow: tl
+
+- name: commitment
+  url: /commitment
+  img: https://images.pexels.com/photos/4323761/pexels-photo-4323761.jpeg?auto=compress&cs=tinysrgb&dpr=1
+  bgAnimation: reveal-left
+  titleAnimation: reveal-right
+
+- name: snow_science
+  url: /snow
+  img: https://images.pexels.com/photos/53214/trekking-hiking-group-alpine-53214.jpeg?auto=compress&cs=tinysrgb&dpr=1
+  bgAnimation: reveal-down
+  titleAnimation: reveal-down
+
+- name: explore
+  url: /explore
+  img: https://images.pexels.com/photos/2853432/pexels-photo-2853432.jpeg?auto=compress&cs=tinysrgb&dpr=1
+  bgAnimation: reveal-down
+  titleAnimation: reveal-down
+  shadow: tr
+
+- name: kids
+  url: /kids
+  img: https://images.pexels.com/photos/322070/pexels-photo-322070.jpeg?auto=compress&cs=tinysrgb&dpr=1
+  bgAnimation: reveal-right
+  titleAnimation: reveal-down
+  shadow: tr

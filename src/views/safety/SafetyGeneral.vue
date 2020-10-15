@@ -29,7 +29,6 @@
 <script>
 import TransitionsViews from '@/utils/mixin.transitions-views';
 import { Container, BlockImage } from '@/components/layout';
-
 import { principles } from '@/config/safety';
 
 export default {

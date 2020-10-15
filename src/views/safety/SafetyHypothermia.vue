@@ -87,7 +87,6 @@
 import TransitionsViews from '@/utils/mixin.transitions-views';
 import { Container } from '@/components/layout';
 import { constrain, decimals, round } from '@/utils/filter.numbers';
-
 import { hypothermia } from '@/config/safety';
 
 const { animation, symptoms, prevention, treatment } = hypothermia;
