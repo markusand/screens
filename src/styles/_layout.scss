@@ -7,7 +7,11 @@ body {
 	font-family: $text-font;
 	line-height: $text-line-height;
 	font-weight: $text-light;
-	user-select: none;
+
+	.prod-ready {
+		user-select: none;
+		* { cursor: none !important; }
+	}
 }
 
 /* COMPONENTS ----------------------------------------------------------- */

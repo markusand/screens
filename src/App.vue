@@ -1,5 +1,7 @@
 <template>
-	<div id="app">
+	<div id="app"
+		:oncontextmenu="`return ${isDevelopment}`"
+		:class="{ 'prod-ready': !isDevelopment }">
 		<header id="app__header">
 			<section />
 			<router-link to="/">
@@ -20,3 +22,10 @@
 		<router-view id="app__content" />
 	</div>
 </template>
+
+<script>
+export default {
+	name: 'App',
+	data: () => ({ isDevelopment: process.env.NODE_ENV === 'development' }),
+};
+</script>
