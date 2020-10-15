@@ -34,7 +34,7 @@ import ImageMarkers from '@/components/ImageMarkers.vue';
 import { introVideo, markers } from '@/config/about';
 
 export default {
-	name: 'Home',
+	name: 'About',
 	components: { Container, BlockVideo, ImageMarkers },
 	mixins: [TransitionsViews],
 	data() {

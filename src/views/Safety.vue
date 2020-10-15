@@ -17,7 +17,7 @@
 import Swipe from '@/utils/directive.swipe';
 
 export default {
-	name: 'Test',
+	name: 'Safety',
 	directives: { Swipe },
 	data() {
 		return {
