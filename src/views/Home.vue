@@ -5,7 +5,7 @@
 				v-for="section in sections"
 				:key="section.name"
 				:to="section.url"
-				:class="`nav-main__section nav-main__section--${section.name}`">
+				:class="classList(section)">
 				<div
 					v-if="section.shadow"
 					:data-animate="section.bgAnimation || 'reveal-down'"
@@ -37,6 +37,15 @@ export default {
 	mixins: [TransitionsViews],
 	data() {
 		return { sections };
+	},
+	methods: {
+		classList({ name, url }) {
+			const { resolved } = this.$router.resolve(url);
+			return ['nav-main__section', {
+				[`nav-main__section--${name}`]: !!name,
+				'nav-main__section--disabled': resolved.name === 'NotFound',
+			}];
+		},
 	},
 };
 </script>

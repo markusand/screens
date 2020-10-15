@@ -20,6 +20,12 @@
 
 		.title { position: absolute; }
 
+		&--disabled {
+			opacity: 0.25;
+			filter: saturate(50%);
+			pointer-events: none;
+		}
+
 		/* SECTIONS */
 		&--about {
 			background: $color-light;
